@@ -1,0 +1,1 @@
+import{a as s}from"./axios.CCb-kr4I.js";const r="https://dgq63136.icu:9090",t=s.create({baseURL:r,timeout:6e4});t.interceptors.request.use(e=>e,e=>Promise.reject(e));t.interceptors.response.use(e=>e.data,e=>(console.log("err",e),Promise.reject(e)));export{t as h};
