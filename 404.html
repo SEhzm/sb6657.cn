@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>6657超级大爆</title>
         <script>
-            /**
-             * 应对github page部署单页面应用时，重定向错误问题
-             * github page有种行为，历史路由下，非法路由会直接进入404.html
-             * 就算设置了path: '/:catchAll(.*)' 也没用，会强制进404.html。
-             * 如果根目录下没这个文件(就是开发的时候放public里的)，就会进它默认的
-             * 所以在404.html里重定向一下，比如说定向到自己的404页面
-             */
-            const page404 = '/404';
-            // 重定向到基础路径
-            window.location.href = page404;
+                /**
+                 * 应对github page部署单页面应用时，重定向错误问题
+                 * github page有种行为，历史路由下，非法路由会直接进入404.html
+                 * 就算设置了path: '/:catchAll(.*)' 也没用，会强制进404.html。
+                 * 如果根目录下没这个文件(就是开发的时候放public里的)，就会进它默认的
+                 * 所以在404.html里重定向一下，比如说定向到自己的404页面
+                 */
+                const page404 = '/notfound';
+                // 重定向到基础路径
+                window.location.href = page404;
         </script>
     </head>
     <body></body>
