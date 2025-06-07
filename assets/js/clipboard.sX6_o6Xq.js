@@ -1,2 +1,2 @@
-import"./index.Ckp2b3ee.js";import{b as t}from"./element-plus.BPmODNcd.js";function r(e){t({title:"复制失败",message:`复制操作失败，请稍后重试。
+import"./index.D5zUv94Z.js";import{b as t}from"./element-plus.BPmODNcd.js";function r(e){t({title:"复制失败",message:`复制操作失败，请稍后重试。
                 可能你的浏览器不支持被动写入剪贴板，请换用其他浏览器`,type:"error"}),console.error("复制失败:",e)}function i(){t({message:"复制成功",type:"success"})}function l(){return t({title:"请勿刷次数",message:"复制成功，但次数没有增加",type:"warning"}),"limitedSuccess"}function u(e){console.log(111+e);const o=document.createElement("input");o.value=e,document.body.appendChild(o),o.select();try{document.execCommand("Copy")}catch(n){return r(n),!1}return document.body.removeChild(o),console.log("复制成功: "+e),!0}export{u as a,i as c,l};
