@@ -27,6 +27,10 @@
             pointer-events: none;
         }
     
+        .loading-img{
+            width: 200px;
+        }
+
         .loading-spin {
             animation: loading-spin 8s linear infinite;
         }
@@ -76,7 +80,7 @@
         })();
     </script>
     <script type="text/javascript" src="//api.tongjiniao.com/c?_=699409175462318080" async></script>
-  <script type="module" crossorigin src="/assets/js/index.BLiWtL3W.js"></script>
+  <script type="module" crossorigin src="/assets/js/index.CavDJzrz.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/js/@vue.Ca5AQEsS.js">
   <link rel="modulepreload" crossorigin href="/assets/js/pinia.Dz8zdBJG.js">
   <link rel="modulepreload" crossorigin href="/assets/js/lodash-es.S0Y0Up6J.js">
@@ -99,10 +103,19 @@
 
 <body>
     <div id="global-loading">
-        <img src="/wan0.png" alt="玩零蛋加载图" class="loading-spin">
+        <img alt="加载图" class="loading-img">
         <div class="loading-text">加载中<span class="dots"></span></div>
     </div>
     <div id="app"></div>
+    <script>
+        const loadingImgDOM = document.querySelector('.loading-img');
+        const loading = ['/wan0.png', '/niko1.gif', '/niko2.gif'];
+        const randomImg = loading[Math.floor(Math.random() * 3)];
+        loadingImgDOM.src = randomImg;
+        if (randomImg === '/wan0.png') {
+            loadingImgDOM.classList.add('loading-spin');
+        }
+    </script>
 </body>
 
 </html>
