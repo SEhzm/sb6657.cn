@@ -1,0 +1,1 @@
+function i(n,r,e){let t=null;return(...u)=>{if(t)return r();{const l=n(...u);return t=setTimeout(()=>{t=null},e),l}}}function o(n,r){let e=null;return(...t)=>{e&&clearTimeout(e),e=setTimeout(()=>{n(...t),e=null},r)}}export{o as d,i as t};
