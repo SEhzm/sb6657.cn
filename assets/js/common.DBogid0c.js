@@ -1,0 +1,1 @@
+import{Gt as e,Kt as t,Pt as n,mn as r,xn as i}from"./@element-plus.C3TqYV6E.js";r(),n();var a=e=>new Promise(t=>setTimeout(t,e));function o(){let n=i(!1),r=null;function a(e){n.value=e.matches}return e(()=>{r=window.matchMedia(`(max-width: 600px)`),n.value=r.matches,r.addEventListener(`change`,a)}),t(()=>{r&&r.removeEventListener(`change`,a)}),n}export{o as n,a as t};
